@@ -1,0 +1,15 @@
+input {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+
+.todo {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 18px;
+}
