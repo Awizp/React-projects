@@ -14,6 +14,7 @@ export const productsApi = createApi({
             query: (id) => `/product/${id}`
         }),
 
+        // Add a new product
         addNewProduct: builder.mutation({
             query: (newProduct) => ({
                 url: `/products/add`,
@@ -23,6 +24,7 @@ export const productsApi = createApi({
             })
         }),
 
+        // Update a product
         updateProductData: builder.mutation({
             query: ({ id, updateProduct }) => ({
                 url: `products/${id}`,
@@ -32,6 +34,7 @@ export const productsApi = createApi({
             })
         }),
 
+        //delete a existing product
         deleteProduct: builder.mutation({
             query: (id) => ({
                 url: `/products/${id}`,
